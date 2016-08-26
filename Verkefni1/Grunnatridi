@@ -23,6 +23,29 @@ test();
 
 Ætti að skila út strengnum "Example content"
 
-4.
+4. Ef þú notar == ert þú að spyrja hvort eitthvað sé jafnt og eitthvað annað en ef þú notar === ert þú að spyrja hvort eitthvað sé það sama (sama týpa og value)
 
-5.
+t.d 1 == "1" skilar út true því þetta er bæði sama talan.
+	1 === "1" skilar false því fyrri er integer en seinni strengur.
+
+5. !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+6.  $a = 1; 			//Stillir breytuna $a sem 1.
+	$b = $a++;			//Stillir breytuna $b sem $a hækkaða um einn eftir skil.
+	$c = ++$a;			//Stillir breytuna $c sem $a hækkaða um einn fyrir skil.
+	echo $a . $b . $c;	//echo skilar út strengnum "313"
+
+7. (Á að sleppa!)
+
+8. $array = array("Japan"=>"Tokyo", "Mexico"=>"Mexico City", "USA"=>"New York City", "India"=>"Mumbai", "Korea"=>"Seoul", "China"=>"Shanghai");
+
+	foreach($array as $x => $x_value){
+		echo $x . " - " . $x_value;
+		echo "<br>";
+	}
+
+9. $colors = array("red","blue","green");
+	list($color1, $color2, $color3) = $colors;
+	echo "Fyrsti liturinn er $color1, svo er það $color2, og svo $color3";
+
+10. 
