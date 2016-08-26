@@ -1,0 +1,26 @@
+1. Echo skipunin skilar ekki neinu gildi og getur tekið fleiri en einn "parameter". Print tekur einn parameter en skilar út gildinu 1, samkvæmt vefnum er echo líka aðeins sneggra í notkun en print.
+
+2. Helsti munurinn á einföldum og tvöföldum gæsalöppum er að einföldu gæsalappirnar geta aldrei verið neitt annað en strengur, alveg eins og hann er skrifaður, en tvöföldu gæsalappirnar skipta út breytum í gildi þeirra.
+
+t.d
+	$breyta = 19;
+	echo 'Ég er $breyta'; myndi einfaldlega skila - "Ég er $breyta".
+
+	En ef þú notar tvöfaldar gæsalappir:
+	$breyta = 19;
+	echo "Ég er $breyta"; myndi skila út "Ég er 19"
+
+3. Breytan $GLOBALS er notuð til að vísa í allar breytur í því tiltekna skjali. Nú hef ég aldrei notað þessa breytu og veit ekki alveg hvenær hún gæti verið nothæf en hérna er eitt dæmi af henni í notkun (fundið á netinu - http://php.net/manual/en/reserved.variables.globals.php).
+
+t.d
+function test() {
+    $foo = "local variable";
+
+    echo '$foo in global scope: ' . $GLOBALS["foo"];
+}
+$foo = "Example content";
+test();
+
+Ætti að skila út strengnum "Example content"
+
+4.
