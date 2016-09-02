@@ -48,4 +48,47 @@ t.d 1 == "1" skilar út true því þetta er bæði sama talan.
 	list($color1, $color2, $color3) = $colors;
 	echo "Fyrsti liturinn er $color1, svo er það $color2, og svo $color3";
 
-10. 
+10. 	$states = array("Texas", "Ohio");
+		array_unshift($states,"California");
+		array_push($states,"New York");
+		print_r($states);
+
+11. 	shuffle($states);
+		print_r($states);
+
+12.		<?php
+		$products = array( array ( "08:10", "10:30", "13:15"), 
+					array ( "GSÖ2B2U", "VSH2B2U", "FOR2B2U"), 
+					array ( "GUS", "GJG", "GRL") );
+	
+		if (count($products) > 0):
+				<table>
+			     <tr>
+			       <td>Klukkan</td>
+			       <td>Afangi</td>
+			       <td>Kennari</td>
+			     </tr>
+			      foreach ($products as $row) : 
+			     <tr>
+			       <td> echo $row[0]; </td>
+			       <td> echo $row[1]; </td>
+			       <td> echo $row[2]; </td>
+			     </tr>
+			      endforeach; 
+		   		</table>
+
+			 endif;
+
+13.
+
+14. $pic = array("pic2.jpg", "PIC10.jpg", "pic20.jpg", "pic1.jpg");
+	sort($pic) - 	//raðar array frá lægsta til hæsta, case sensitive
+	natcasesort($pic) - raðar array frá lægsta til hæsta, case insensitive
+
+15. http er protocol sem notað er til að flytja/sýna gögn á netinu.
+	http er stateless því að hver skipun er keyrð sjálfstæð.
+
+16. http://www.tskoli.is
+	http er protocol-ið, www er world wide web sem hýsir allar vefsíður og net upplýsingar (geymir ekki gögn), tskoli er domain nafnið og .is er domainið.
+
+17. Server side scripting virkar þannig að serverinn keyrir script þar sem útkoman frá því sendist til notandanns, scriptan keyrir ekki í vafranum eins og með venjulegar scriptur heldur á servernum sjálfum.
